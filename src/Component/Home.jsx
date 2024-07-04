@@ -7,6 +7,8 @@ import Firstaporment from "./Firstaporment";
 import Acoirdiansection from "./Acoirdiansection";
 import AboutSection from "./AboutSection";
 import OnlinnDoctor from "./OnlinnDoctor";
+import MetionSection from "./MetionSection";
+import About2 from "./About2";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -43,22 +45,23 @@ const Home = () => {
 
                             </div>
 
+
                             {/* Mobile Menu */}
                             <div
                                 className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
                                     }`}
                             >
                                 <div className="flex flex-col md:flex-row md:justify-between md:mx-6">
-                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#home">
                                         Home
                                     </a>
-                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#servises">
                                         Shop
                                     </a>
-                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#contact">
                                         Contact
                                     </a>
-                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+                                    <a className="my-2 text-[#343268] text-[16px] transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#rating">
                                         About
                                     </a>
                                 </div>
@@ -76,19 +79,34 @@ const Home = () => {
 
                 {/* banner secrion */}
 
-                <Bannersection></Bannersection>
+                <section id="home">
+                    <Bannersection></Bannersection>
+                </section>
+
+                {/* Merion  secrion */}
+
+                <MetionSection></MetionSection>
 
                 {/* online doctior section secrion */}
 
-                <OnlinnDoctor></OnlinnDoctor>
+                <section id="servises">
+                    <OnlinnDoctor></OnlinnDoctor>
+                </section>
 
 
                 {/* about secrion */}
-                <section className="mt-20 md:mt-32 px-4 md:px-8">
-                    <AboutSection></AboutSection>
+                <section className="mt-20 lg:mt-32 px-4 md:px-8" id="rating">
+                    <div className="hidden lg:block ">
+                        <AboutSection></AboutSection>
+                    </div>
+                    <div className="block lg:hidden">
+                        <About2></About2>
+                    </div>
                 </section>
                 {/* Acordian  secrion */}
-                <Acoirdiansection></Acoirdiansection>
+                <section id="contact">
+                    <Acoirdiansection></Acoirdiansection>
+                </section>
                 {/* Firstaporment section */}
                 <Firstaporment>
 

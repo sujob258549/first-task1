@@ -9,7 +9,7 @@ const AccordionSection = () => {
 
     return (
         <div>
-            <div className="mt-20 md:mt-32 px-4 md:px-8">
+            <div className="mt-10 md:mt-32 px-4 md:px-8">
                 <div id="accordion-flush" className="">
                     <div>
                         <button className="btn rounded-full text-[16px] px-6 btn-outline">Fuq</button>
