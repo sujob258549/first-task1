@@ -4,14 +4,14 @@ import litelogo from '../assets/task img/logo light.png'
 
 const Firstaporment = () => {
     return (
-        <div className=''>
+        <div className='px-4 md:px-8'>
             <div
                 className="w-full bg-center bg-cover h-[477px] rounded-[45px] mt-20 md:mt-32"
                 style={{ backgroundImage: `url(${firstprement})` }}
             >
                 <div className="flex items-center rounded-[45px] w-full h-full bg-gradient-to-r from-[#020043] to-[#0200436b]">
 
-                    <div className="px-8 md:px-16 w-full">
+                    <div className="px-4 md:px-8 w-full">
                         <div>
                             <div className='flex justify-start md:justify-end'>
                                 <img className='-mt-20 w-32 h-10' src={litelogo} alt="" />

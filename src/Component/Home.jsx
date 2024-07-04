@@ -5,15 +5,17 @@ import Bannersection from "./Bannersection";
 import Footer from "./Footer";
 import Firstaporment from "./Firstaporment";
 import Acoirdiansection from "./Acoirdiansection";
+import AboutSection from "./AboutSection";
+import OnlinnDoctor from "./OnlinnDoctor";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
             <div className="max-w-[1160px] mx-auto">
-                <section className="">
+                <section className="px-4 md:px-8">
                     <nav className="relative">
-                        <div className="container  py-4 mx-auto md:flex md:justify-between md:items-center">
+                        <div className=" py-4 mx-auto md:flex md:justify-between md:items-center">
                             <div className="flex items-center justify-between">
                                 <a href="#">
                                     <img className="w-auto h-6 sm:h-7" src={logo} alt="" />
@@ -73,7 +75,18 @@ const Home = () => {
 
 
                 {/* banner secrion */}
+
                 <Bannersection></Bannersection>
+
+                {/* online doctior section secrion */}
+
+                <OnlinnDoctor></OnlinnDoctor>
+
+
+                {/* about secrion */}
+                <section className="mt-20 md:mt-32 px-4 md:px-8">
+                    <AboutSection></AboutSection>
+                </section>
                 {/* Acordian  secrion */}
                 <Acoirdiansection></Acoirdiansection>
                 {/* Firstaporment section */}
